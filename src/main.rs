@@ -1,13 +1,10 @@
 
-mod demo;
+mod game;
+mod tilemap;
 
-
-use demo::Demo;
-use gc2d::gc2d::Gc2d;
+use game::Game;
+use gc2d::gc2d::*;
 
 fn main() {
-    Gc2d::new().run(
-        Demo::default()
-    ).unwrap();
-    
+    Gc2d::new().run(Game::new()).unwrap();
 }
