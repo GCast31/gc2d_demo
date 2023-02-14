@@ -1,9 +1,9 @@
 
 use std::collections::HashMap;
 
-use gc2d::{event::EventLoop, color::Color};
+use gc2d::event::EventLoop;
+use gc2d_games::tilemap::{TileMap, TypeTileMap};
 
-use crate::tilemap::{TileMap, TypeTileMap};
 
 const MAP_TILE_HEIGHT: usize = 70;
 const MAP_TILE_WIDTH: usize = 70;
@@ -63,12 +63,9 @@ impl EventLoop for Game {
         Ok(())
     }
 
-    fn draw(&mut self, gc2d: &mut gc2d::gc2d::Gc2d, fonts: &mut gc2d::fonts::FontsManager, dt: f32) -> Result<(), gc2d::event::EventError> {
+    fn draw(&mut self, gc2d: &mut gc2d::gc2d::Gc2d, fonts: &mut gc2d::fonts::FontsManager, _dt: f32) -> Result<(), gc2d::event::EventError> {
 
         self.map.draw(gc2d);
-
-
-        gc2d.graphics.print(format!("{}", dt), 0., 0., Some(Color::RED), fonts);
 
         Ok(())
     }

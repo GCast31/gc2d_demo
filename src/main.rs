@@ -1,6 +1,5 @@
 
 mod game;
-mod tilemap;
 
 use game::Game;
 use gc2d::gc2d::*;

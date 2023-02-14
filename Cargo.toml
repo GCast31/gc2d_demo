@@ -7,4 +7,5 @@ edition = "2021"
 
 [dependencies]
 gc2d = { git = "https://github.com/GCast31/gc2d.git", version = "*" }
+gc2d_games = { git = "https://github.com/GCast31/gc2d_games.git", version = "0.1.0" }
 rand = "0.8.5"

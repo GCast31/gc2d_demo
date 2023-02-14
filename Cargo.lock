@@ -25,16 +25,25 @@ name = "demo"
 version = "0.1.0"
 dependencies = [
  "gc2d",
+ "gc2d_games",
  "rand",
 ]
 
 [[package]]
 name = "gc2d"
 version = "0.1.0"
-source = "git+https://github.com/GCast31/gc2d.git#1dfce11d5abe751ed24376b979cef0f8c6c4e668"
+source = "git+https://github.com/GCast31/gc2d.git#260a5c35076fbf14745db3b6fa50ffb5267beb69"
 dependencies = [
  "sdl2",
  "time",
+]
+
+[[package]]
+name = "gc2d_games"
+version = "0.1.0"
+source = "git+https://github.com/GCast31/gc2d_games.git#32f76ec9193ce92db4e0190fa49b63d051695b29"
+dependencies = [
+ "gc2d",
 ]
 
 [[package]]
