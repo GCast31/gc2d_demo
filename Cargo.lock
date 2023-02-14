@@ -41,7 +41,7 @@ dependencies = [
 [[package]]
 name = "gc2d_games"
 version = "0.1.0"
-source = "git+https://github.com/GCast31/gc2d_games.git#32f76ec9193ce92db4e0190fa49b63d051695b29"
+source = "git+https://github.com/GCast31/gc2d_games.git#d5203fbca76adbc5b916371c128745437bcdea69"
 dependencies = [
  "gc2d",
 ]
